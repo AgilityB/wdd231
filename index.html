@@ -1,11 +1,102 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231</title>
+    <title>WDD 231 - Frontend Development I - Nwakwuruibe Bright</title>
+    <meta name="description" content="WDD 231 Frontend Development I course home page by Nwakwuruibe Bright.">
+    <meta name="author" content="Nwakwuruibe Bright">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/main.js" defer></script>
 </head>
+
 <body>
-    <H1>WDD 231</H1>
-    
+    <header>
+        <div class="site-brand">
+            <img src="images/globe.svg" alt="Site logo" width="48" height="48">
+            <span>Nwakwuruibe Bright</span>
+        </div>
+
+        <button id="navToggle" class="nav-toggle" type="button" aria-label="Open navigation menu"
+            aria-controls="primaryNav" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav id="primaryNav" class="navigation">
+            <a class="active" href="index.html">Home</a>
+            <a href="chamber/index.html">Chamber</a>
+            <a href="final/index.html">Final</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+
+        <div class="info-grid">
+            <section class="card">
+                <h2>About Me</h2>
+                <div class="card-content">
+                    <p>
+                        My name is Nwakwuruibe Bright. I am a software development student with a growing interest
+                        in frontend development, web technologies, and building responsive, accessible websites.
+                        I enjoy learning how HTML, CSS, and JavaScript work together to create clean and useful
+                        user experiences. I am also committed to improving my practical coding skills through
+                        coursework and real projects.
+                    </p>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Student Photo</h2>
+                <div class="card-content photo-card">
+                    <img src="images/profile.webp" alt="Portrait of Nwakwuruibe Bright" width="300" height="360">
+                </div>
+            </section>
+        </div>
+
+        <section class="card courses-section">
+            <h2>Web Certificate Courses</h2>
+            <div class="card-content">
+                <div class="filter-buttons">
+                    <button type="button" id="all">All</button>
+                    <button type="button" id="cse">CSE</button>
+                    <button type="button" id="wdd">WDD</button>
+                </div>
+
+                <div id="courseContainer" class="course-container"></div>
+                <p id="credits" class="credits"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/AgilityB" target="_blank" rel="noopener noreferrer"
+                aria-label="GitHub profile">
+                <img src="images/githubs.svg" alt="GitHub" width="40" height="40">
+            </a>
+            <a href="https://www.linkedin.com/in/bright-nwakwuruibe/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="40" height="40">
+            </a>
+            <a href="https://www.instagram.com/dreal_bright" target="_blank" rel="noopener noreferrer"
+                aria-label="Instagram profile">
+                <img src="images/instagram.svg" alt="Instagram" width="40" height="40">
+            </a>
+        </div>
+
+        <p>&copy; <span id="currentyear"></span> Nwakwuruibe Bright, Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>

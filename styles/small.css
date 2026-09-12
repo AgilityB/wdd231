@@ -1,0 +1,366 @@
+/* ==============================
+   TASK: WDD 231 COURSE HOME PAGE
+   MOBILE / BASE STYLES
+   ============================== */
+
+:root {
+    --primary: #4f0c8e;
+    --primary-dark: #350660;
+    --accent: #ffc857;
+    --background: #f7f5fa;
+    --white: #ffffff;
+    --text: #222222;
+    --muted: #666666;
+    --border: #d9d9d9;  
+    --completed-bg: #eee6f7;
+    --shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    --radius: 10px;
+}
+
+/* ---------- RESET ---------- */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+/* ---------- IMAGES ---------- */
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* ---------- LINKS ---------- */
+
+a {
+    color: inherit;
+}
+
+/* ---------- HEADER ---------- */
+
+header {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.site-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.site-brand img {
+    width: 48px;
+    height: 48px;
+}
+
+.site-brand span {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+/* ---------- MOBILE MENU BUTTON ---------- */
+
+.nav-toggle {
+    display: block;
+    background-color: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+    border-radius: 6px;
+    padding: 0.25rem 0.65rem;
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.nav-toggle:hover {
+    background-color: var(--accent);
+    color: var(--primary);
+}
+
+/* ---------- NAVIGATION ---------- */
+
+.navigation {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.navigation a {
+    display: block;
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    border-bottom: 3px solid transparent;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.navigation a:hover,
+.navigation a:focus-visible {
+    background-color: var(--primary-dark);
+    border-bottom-color: var(--accent);
+}
+
+.navigation a.active {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+/* ---------- MAIN ---------- */
+
+main {
+    width: min(92%, 1100px);
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.25;
+}
+
+h1 {
+    color: var(--primary);
+    text-align: center;
+    margin: 0 0 2rem;
+    font-size: 2rem;
+}
+
+h2 {
+    margin: 0;
+    padding: 0.85rem 1rem;
+    background-color: var(--primary);
+    color: var(--white);
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+h3 {
+    color: var(--primary);
+    margin-top: 0;
+}
+
+/* ---------- GENERAL CARDS ---------- */
+
+.card {
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+/* ---------- ABOUT + PHOTO ---------- */
+
+.info-grid {
+    display: grid;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.photo-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-card img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+/* ---------- COURSES ---------- */
+
+.courses-section {
+    margin-top: 1.5rem;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.filter-buttons button {
+    border: 2px solid var(--primary);
+    border-radius: 25px;
+    background-color: var(--white);
+    color: var(--primary);
+    padding: 0.6rem 1.1rem;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.filter-buttons button:hover,
+.filter-buttons button:focus-visible {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.course-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+/* ---------- COURSE BUTTON ---------- */
+
+.course-card {
+    padding: 0;
+    overflow: hidden;
+}
+
+.course-button {
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    background-color: var(--primary);
+    color: var(--white);
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.course-button:hover,
+.course-button:focus-visible {
+    background-color: var(--primary-dark);
+}
+
+.course-card.completed .course-button {
+    background-color: var(--primary-dark);
+    color: var(--accent);
+}
+
+.course-details {
+    display: none;
+    padding: 1.25rem;
+    background-color: var(--white);
+}
+
+.course-details.show {
+    display: block;
+}
+
+.course-details h3 {
+    margin-top: 0;
+    color: var(--primary);
+}
+
+.course-details p {
+    margin: 0.6rem 0;
+}
+
+/* ---------- CREDIT TOTAL ---------- */
+
+.credits {
+    margin: 1.5rem 0 0;
+    padding: 1rem;
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: var(--radius);
+    text-align: center;
+    font-weight: 700;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    background-color: var(--primary-dark);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    display: inline-block;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+}
+
+.social-links a:hover,
+.social-links a:focus-visible {
+    transform: scale(1.08);
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+/* ---------- FOCUS ACCESSIBILITY ---------- */
+
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
+}
+
+/* ---------- SMALL SCREEN SAFETY ---------- */
+
+@media (max-width: 319px) {
+    body {
+        font-size: 15px;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    .filter-buttons button {
+        width: 100%;
+    }
+}
