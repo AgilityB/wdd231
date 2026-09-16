@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Umuahia Business Hub",
+        "address": "15 Aba Road, Umuahia, Abia State",
+        "phone": "+234 800 000 1001",
+        "website": "https://example.com",
+        "image": "business-1.webp",
+        "membership": 3,
+        "category": "Business Services",
+        "description": "Sample business information for the Umuahia Chamber directory."
+    },
+    {
+        "name": "Abia Digital Solutions",
+        "address": "22 Bank Road, Umuahia, Abia State",
+        "phone": "+234 800 000 1002",
+        "website": "https://example.com",
+        "image": "business-2.webp",
+        "membership": 2,
+        "category": "Technology",
+        "description": "Sample technology and digital services business."
+    },
+    {
+        "name": "Umuahia Creative Studio",
+        "address": "8 School Road, Umuahia, Abia State",
+        "phone": "+234 800 000 1003",
+        "website": "https://example.com",
+        "image": "business-3.webp",
+        "membership": 1,
+        "category": "Creative Services",
+        "description": "Sample creative and design services business."
+    },
+    {
+        "name": "Eastern Enterprise Centre",
+        "address": "31 Ikot Ekpene Road, Umuahia, Abia State",
+        "phone": "+234 800 000 1004",
+        "website": "https://example.com",
+        "image": "business-4.webp",
+        "membership": 3,
+        "category": "Business Consulting",
+        "description": "Sample business consulting and enterprise support organization."
+    },
+    {
+        "name": "Green Valley Foods",
+        "address": "12 Mission Hill, Umuahia, Abia State",
+        "phone": "+234 800 000 1005",
+        "website": "https://example.com",
+        "image": "business-5.webp",
+        "membership": 2,
+        "category": "Food and Agriculture",
+        "description": "Sample food and agricultural business."
+    },
+    {
+        "name": "Umuahia Property Services",
+        "address": "44 Aba Road, Umuahia, Abia State",
+        "phone": "+234 800 000 1006",
+        "website": "https://example.com",
+        "image": "business-6.webp",
+        "membership": 1,
+        "category": "Real Estate",
+        "description": "Sample property and real estate services business."
+    },
+    {
+        "name": "Capital Business Centre",
+        "address": "6 Library Avenue, Umuahia, Abia State",
+        "phone": "+234 800 000 1007",
+        "website": "https://example.com",
+        "image": "business-7.webp",
+        "membership": 3,
+        "category": "Professional Services",
+        "description": "Sample professional services business."
+    }
+]

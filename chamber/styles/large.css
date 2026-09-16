@@ -1,0 +1,443 @@
+/* =========================================
+   LARGE SCREEN STYLES
+   Umuahia Chamber of Commerce
+   ========================================= */
+
+@media screen and (min-width: 768px) {
+
+    /* -----------------------------------------
+       GENERAL
+       ----------------------------------------- */
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .section {
+        padding: 3rem 0;
+    }
+
+
+    /* -----------------------------------------
+       HEADER
+       ----------------------------------------- */
+
+    .site-header {
+        position: relative;
+    }
+
+    .header-container {
+        max-width: 1200px;
+        min-height: 78px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .brand {
+        flex-shrink: 0;
+    }
+
+    .brand img {
+        width: 52px;
+        height: 52px;
+    }
+
+    .brand-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .brand-name {
+        font-size: 1.1rem;
+    }
+
+    .brand-tagline {
+        font-size: 0.75rem;
+    }
+
+
+    /* -----------------------------------------
+       NAVIGATION
+       ----------------------------------------- */
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        position: static;
+        width: auto;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .navigation ul {
+        display: flex;
+        align-items: center;
+        gap: 0.35rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navigation li {
+        border: none;
+    }
+
+    .navigation a {
+        padding: 0.75rem 0.9rem;
+        border-radius: 6px;
+        font-size: 0.9rem;
+    }
+
+    .navigation a:hover {
+        background-color: var(--background);
+        color: var(--primary);
+    }
+
+    .navigation a.active,
+    .navigation a[aria-current="page"] {
+        background-color: var(--primary);
+        color: var(--white);
+    }
+
+
+    /* -----------------------------------------
+       HERO
+       ----------------------------------------- */
+
+    .hero {
+        min-height: 500px;
+        display: flex;
+        align-items: center;
+    }
+
+    .hero img {
+        min-height: 500px;
+    }
+
+    .hero-content {
+        max-width: 650px;
+        padding: 4rem 0;
+    }
+
+    .hero h1 {
+        max-width: 700px;
+        font-size: clamp(2.5rem, 5vw, 4.25rem);
+        line-height: 1.05;
+    }
+
+    .hero p {
+        max-width: 600px;
+        font-size: 1.1rem;
+    }
+
+
+    /* -----------------------------------------
+       INTRODUCTION
+       ----------------------------------------- */
+
+    .intro {
+        text-align: center;
+    }
+
+    .intro .section-heading {
+        max-width: 750px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .intro p {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* -----------------------------------------
+       QUICK LINKS
+       ----------------------------------------- */
+
+    .quick-links {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .quick-card {
+        min-height: 220px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .quick-card h3 {
+        font-size: 1.25rem;
+    }
+
+
+    /* -----------------------------------------
+       EVENTS
+       ----------------------------------------- */
+
+    .events-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .event-card {
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        gap: 1.25rem;
+        align-items: start;
+    }
+
+    .event-date {
+        min-height: 100px;
+    }
+
+    .event-date .month {
+        font-size: 0.9rem;
+    }
+
+    .event-date .day {
+        font-size: 2rem;
+    }
+
+
+    /* -----------------------------------------
+       FEATURED BUSINESSES
+       ----------------------------------------- */
+
+    .business-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .business-card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .business-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .business-card-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .business-card .text-link {
+        margin-top: auto;
+    }
+
+
+    /* -----------------------------------------
+       MEMBERSHIP CTA
+       ----------------------------------------- */
+
+    .membership-cta {
+        padding: 4rem 2rem;
+        text-align: center;
+    }
+
+    .membership-cta h2 {
+        font-size: 2rem;
+    }
+
+    .membership-cta p {
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* =========================================
+    DIRECTORY - LARGE SCREENS
+    ========================================= */
+
+    .directory-page {
+        padding-top: 2.5rem;
+        padding-bottom: 4rem;
+    }
+
+
+    /* -----------------------------------------
+    VIEW CONTROLS
+    ----------------------------------------- */
+
+    .view-controls {
+        justify-content: center;
+        margin: 1.5rem 0 2rem;
+    }
+
+
+    /* -----------------------------------------
+    MEMBER GRID
+    ----------------------------------------- */
+
+    .member-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.25rem;
+    }
+
+    .member-card {
+        min-height: 100%;
+        padding: 1rem;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /* -----------------------------------------
+    MEMBER IMAGE
+    ----------------------------------------- */
+
+    .member-image {
+        min-height: 150px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .member-image img {
+        max-width: 240px;
+        height: 140px;
+    }
+
+
+    /* -----------------------------------------
+    LIST VIEW
+    ----------------------------------------- */
+
+    .member-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .member-list .member-card {
+        display: grid;
+        grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+
+        align-items: center;
+
+        min-height: auto;
+        padding: 0.9rem 1rem;
+    }
+
+    .member-list .member-info {
+        display: contents;
+    }
+
+    .member-list .member-info h2 {
+        margin: 0;
+    }
+
+    .member-list .member-category {
+        margin: 0;
+    }
+
+    .member-list .member-info p {
+        margin: 0;
+    }
+
+    .member-list .member-description {
+        display: none;
+    }
+
+    .member-list .member-website {
+        margin: 0;
+    }
+    
+    /* -----------------------------------------
+       FOOTER
+       ----------------------------------------- */
+
+    .site-footer {
+        margin-top: 3rem;
+    }
+
+    .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 3rem 1.5rem;
+
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr;
+        gap: 3rem;
+    }
+
+    .footer-column {
+        min-width: 0;
+    }
+
+    .footer-column h3 {
+        margin-bottom: 1rem;
+    }
+
+    .footer-bottom {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem 1.5rem;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .footer-bottom p {
+        margin: 0;
+    }
+
+
+    /* -----------------------------------------
+       ACCESSIBILITY
+       ----------------------------------------- */
+
+    .navigation a:focus-visible,
+    .button:focus-visible,
+    .text-link:focus-visible {
+        outline: 3px solid var(--secondary);
+        outline-offset: 3px;
+    }
+}
+
+
+/* =========================================
+   EXTRA-WIDE SCREENS
+   ========================================= */
+
+@media screen and (min-width: 1100px) {
+
+    .header-container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .hero-content {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .section {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}

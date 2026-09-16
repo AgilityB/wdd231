@@ -1,0 +1,785 @@
+/* =========================================
+   UMUAHIA CHAMBER OF COMMERCE
+   MOBILE / BASE STYLES
+   WDD 231 CHAMBER PROJECT
+   ========================================= */
+
+/* ---------- CSS VARIABLES ---------- */
+
+:root {
+    --primary: #14532d;
+    --primary-dark: #0f3d21;
+    --secondary: #d4a72c;
+    --background: #f8faf9;
+    --white: #ffffff;
+    --text: #1f2937;
+    --muted: #64748b;
+    --border: #d9e2dc;
+
+    --shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    --radius: 10px;
+}
+
+
+/* ---------- RESET ---------- */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+}
+
+
+/* ---------- GENERAL CONTAINERS ---------- */
+
+.container {
+    width: min(92%, 1100px);
+    margin: 0 auto;
+}
+
+.section {
+    padding: 3.5rem 0;
+}
+
+.section-heading {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.section-heading h2,
+.intro h2 {
+    margin: 0;
+    color: var(--primary);
+    line-height: 1.25;
+}
+
+.section-label,
+.eyebrow {
+    margin: 0 0 0.5rem;
+    color: var(--secondary);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+
+/* ---------- HEADER ---------- */
+
+.site-header {
+    background-color: var(--primary);
+    color: var(--white);
+    box-shadow: var(--shadow);
+}
+
+.header-container {
+    width: min(92%, 1100px);
+    margin: 0 auto;
+    padding: 1rem 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.site-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.site-brand img {
+    width: 50px;
+    height: 50px;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.brand-name {
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.brand-subtitle {
+    color: var(--secondary);
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+
+/* ---------- MOBILE NAVIGATION BUTTON ---------- */
+
+.nav-toggle {
+    display: block;
+    padding: 0.35rem 0.7rem;
+
+    border: 2px solid var(--white);
+    border-radius: 6px;
+
+    background-color: transparent;
+    color: var(--white);
+
+    font-family: inherit;
+    font-size: 1.5rem;
+    line-height: 1;
+
+    cursor: pointer;
+}
+
+.nav-toggle:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+
+/* ---------- NAVIGATION ---------- */
+
+.navigation {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem 1rem;
+
+    color: var(--white);
+    text-decoration: none;
+
+    border-bottom: 3px solid transparent;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.navigation a:hover,
+.navigation a:focus-visible {
+    background-color: var(--primary-dark);
+    border-bottom-color: var(--secondary);
+}
+
+.navigation a.active {
+    color: var(--secondary);
+    font-weight: 700;
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero {
+    position: relative;
+    background-color: var(--primary-dark);
+    color: var(--white);
+}
+
+.hero picture,
+.hero picture img {
+    width: 100%;
+}
+
+.hero picture img {
+    min-height: 420px;
+    object-fit: cover;
+}
+
+.hero-content {
+    padding: 2rem 4%;
+    background-color: var(--primary-dark);
+}
+
+.hero-content h1 {
+    margin: 0 0 1rem;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    max-width: 650px;
+    margin: 0 0 1.5rem;
+}
+
+
+/* ---------- BUTTONS ---------- */
+
+.button {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+
+    border-radius: 6px;
+
+    font-weight: 600;
+    text-decoration: none;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.button:hover,
+.button:focus-visible {
+    transform: translateY(-2px);
+}
+
+.button-primary {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+.button-primary:hover,
+.button-primary:focus-visible {
+    background-color: var(--white);
+}
+
+.button-secondary {
+    background-color: var(--white);
+    color: var(--primary);
+}
+
+.button-secondary:hover,
+.button-secondary:focus-visible {
+    background-color: var(--secondary);
+}
+
+
+/* ---------- INTRODUCTION ---------- */
+
+.intro {
+    background-color: var(--white);
+}
+
+.intro .container {
+    max-width: 800px;
+    text-align: center;
+}
+
+.intro h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.intro p {
+    margin: 0 0 1rem;
+}
+
+
+/* ---------- SAMPLE CONTENT NOTICE ---------- */
+
+.sample-note {
+    margin: 1.5rem 0 0;
+    padding: 0.85rem 1rem;
+
+    background-color: #fff8e1;
+    border-left: 4px solid var(--secondary);
+
+    color: var(--text);
+    font-size: 0.9rem;
+}
+
+
+/* ---------- QUICK LINKS ---------- */
+
+.quick-links {
+    background-color: var(--background);
+}
+
+.quick-link-grid {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.quick-card {
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+.quick-card-content {
+    padding: 1.5rem;
+}
+
+.quick-card h3 {
+    margin: 0 0 0.75rem;
+    color: var(--primary);
+}
+
+.quick-card p {
+    margin: 0 0 1rem;
+}
+
+
+/* ---------- TEXT LINKS ---------- */
+
+.text-link {
+    color: var(--primary);
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+
+.text-link:hover,
+.text-link:focus-visible {
+    color: var(--primary-dark);
+}
+
+
+/* ---------- EVENTS ---------- */
+
+.events {
+    background-color: var(--white);
+}
+
+.event-grid {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.event-card {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 1rem;
+
+    padding: 1rem;
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+
+    background-color: var(--background);
+}
+
+.event-date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 80px;
+
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 8px;
+
+    text-align: center;
+}
+
+.event-month {
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.event-day {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.event-content h3 {
+    margin: 0 0 0.5rem;
+    color: var(--primary);
+}
+
+.event-content p {
+    margin: 0.4rem 0;
+}
+
+
+/* ---------- FEATURED BUSINESSES ---------- */
+
+.featured-businesses {
+    background-color: var(--background);
+}
+
+.business-grid {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.business-card {
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+.business-card>img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.business-card-content {
+    padding: 1.25rem;
+}
+
+.business-card h3 {
+    margin: 0 0 0.25rem;
+    color: var(--primary);
+}
+
+.business-category {
+    margin: 0 0 1rem;
+    color: var(--secondary);
+    font-weight: 700;
+}
+
+.business-card p {
+    margin: 0.5rem 0;
+}
+
+
+/* ---------- MEMBERSHIP CTA ---------- */
+
+.membership-cta {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.cta-content {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cta-content h2 {
+    margin: 0 0 1rem;
+    font-size: 1.8rem;
+}
+
+.cta-content p {
+    margin: 0 0 1.5rem;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+.site-footer {
+    background-color: var(--primary-dark);
+    color: var(--white);
+}
+
+.footer-container {
+    width: min(92%, 1100px);
+    margin: 0 auto;
+    padding: 3rem 0;
+
+    display: grid;
+    gap: 2rem;
+}
+
+.footer-column h2 {
+    margin: 0 0 0.75rem;
+    color: var(--secondary);
+    font-size: 1.1rem;
+}
+
+.footer-column address {
+    font-style: normal;
+}
+
+.footer-column p {
+    margin: 0.5rem 0;
+}
+
+.footer-column a {
+    color: var(--white);
+}
+
+.footer-column a:hover,
+.footer-column a:focus-visible {
+    color: var(--secondary);
+}
+
+.footer-navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.social-links a {
+    padding: 0.4rem 0.7rem;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.social-links a:hover,
+.social-links a:focus-visible {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+.footer-bottom {
+    padding: 1.25rem 1rem;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0.35rem 0;
+    font-size: 0.85rem;
+}
+
+
+/* ---------- ACCESSIBILITY ---------- */
+
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid var(--secondary);
+    outline-offset: 3px;
+}
+
+
+/* ---------- SMALL SCREEN SAFETY ---------- */
+
+@media (max-width: 319px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    .container,
+    .header-container,
+    .footer-container {
+        width: 94%;
+    }
+
+    .hero-content {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .event-card {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================================
+   DIRECTORY PAGE
+   ========================================= */
+
+.directory-page {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.directory-page>h1 {
+    margin-bottom: 0.5rem;
+}
+
+.directory-intro {
+    max-width: 700px;
+    color: var(--muted);
+}
+
+
+/* -----------------------------------------
+   VIEW CONTROLS
+   ----------------------------------------- */
+
+.view-controls {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1.5rem 0;
+}
+
+.view-button {
+    min-width: 80px;
+    padding: 0.6rem 1rem;
+
+    border: 2px solid var(--primary);
+    border-radius: 4px;
+
+    background-color: var(--white);
+    color: var(--primary);
+
+    font-family: inherit;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.view-button:hover,
+.view-button.active {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+
+/* -----------------------------------------
+   MEMBER GRID
+   ----------------------------------------- */
+
+.member-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+
+/* -----------------------------------------
+   MEMBER CARD
+   ----------------------------------------- */
+
+.member-card {
+    padding: 1rem;
+
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
+}
+
+.member-image {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.member-image img {
+    width: 100%;
+    max-width: 260px;
+    height: 150px;
+
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.member-info h2 {
+    margin-bottom: 0.25rem;
+    font-size: 1.15rem;
+}
+
+.member-category {
+    margin-top: 0;
+    margin-bottom: 1rem;
+
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.member-info p {
+    margin: 0.45rem 0;
+    font-size: 0.9rem;
+}
+
+.member-description {
+    color: var(--muted);
+}
+
+.member-website {
+    display: inline-block;
+    margin-top: 0.75rem;
+
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.member-website:hover {
+    color: var(--primary-dark);
+}
+
+
+/* -----------------------------------------
+   LIST VIEW
+   ----------------------------------------- */
+
+.member-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.member-list .member-card {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid var(--border);
+
+    box-shadow: none;
+
+    padding: 1rem;
+}
+
+.member-list .member-card:nth-child(even) {
+    background-color: #eaf7f6;
+}
+
+.member-list .member-image {
+    display: none;
+}
+
+.member-list .member-info h2 {
+    font-size: 1rem;
+}
+
+.member-list .member-description {
+    display: none;
+}
+
+
+/* -----------------------------------------
+   ERROR MESSAGE
+   ----------------------------------------- */
+
+.error-message {
+    padding: 1.5rem;
+
+    text-align: center;
+
+    background-color: #fff4f4;
+    border: 1px solid #e5baba;
+
+    border-radius: var(--radius);
+}

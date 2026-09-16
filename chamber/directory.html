@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Directory | Umuahia Chamber of Commerce</title>
+
+    <meta name="description" content="Explore businesses and members of the Umuahia Chamber of Commerce directory.">
+
+    <meta name="author" content="Nwakwuruibe Bright">
+
+    <!-- Normalize / Reset -->
+    <link rel="stylesheet" href="styles/normalize.css">
+
+    <!-- Chamber Styles -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <a href="index.html" class="brand">
+                <img src="images/logo.svg" alt="Umuahia Chamber of Commerce logo" width="52" height="52">
+
+                <div class="brand-text">
+                    <span class="brand-name">Umuahia Chamber</span>
+                    <span class="brand-tagline">of Commerce</span>
+                </div>
+            </a>
+
+            <!-- MOBILE MENU BUTTON -->
+            <button class="nav-toggle" id="navToggle" type="button" aria-label="Open navigation menu"
+                aria-controls="primaryNav" aria-expanded="false">
+
+                ☰
+
+            </button>
+
+            <!-- NAVIGATION -->
+            <nav class="navigation" id="primaryNav">
+
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="directory.html" class="active" aria-current="page">
+                            Directory
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="discover.html">
+                            Discover
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="join.html">
+                            Join
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="container directory-page">
+
+        <h1>Business Directory</h1>
+
+        <p class="directory-intro">
+            Explore businesses and organizations connected with the
+            Umuahia Chamber of Commerce. Use the buttons below to
+            choose your preferred directory view.
+        </p>
+
+
+        <!-- DIRECTORY VIEW CONTROLS -->
+        <div class="view-controls">
+
+            <button id="gridView" class="view-button active" type="button" aria-label="Display businesses in grid view">
+
+                Grid
+
+            </button>
+
+            <button id="listView" class="view-button" type="button" aria-label="Display businesses in list view">
+
+                List
+
+            </button>
+
+        </div>
+
+
+        <!-- BUSINESS DIRECTORY -->
+
+        <section id="memberContainer" class="member-grid" aria-label="Umuahia Chamber of Commerce business members">
+
+            <!-- Member cards will be generated with JavaScript -->
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <!-- CHAMBER CONTACT -->
+
+            <section class="footer-column">
+
+                <h2>Umuahia Chamber of Commerce</h2>
+
+                <p>
+                    Umuahia, Abia State<br>
+                    Nigeria
+                </p>
+
+                <p>
+                    info@umuahiachamber.org
+                </p>
+
+                <p>
+                    +234 000 000 0000
+                </p>
+
+            </section>
+
+
+            <!-- SOCIAL LINKS -->
+
+            <section class="footer-column">
+
+                <h2>Connect With Us</h2>
+
+                <div class="social-links">
+
+                    <a href="#" aria-label="Visit our Facebook page">
+                        Facebook
+                    </a>
+
+                    <a href="#" aria-label="Visit our LinkedIn page">
+                        LinkedIn
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- DEVELOPMENT INFORMATION -->
+
+            <section class="footer-column">
+
+                <h2>Development</h2>
+
+                <p>
+                    WDD 231 Chamber Project
+                </p>
+
+                <p>
+                    Nwakwuruibe Bright
+                </p>
+
+            </section>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy;
+                <span id="currentyear"></span>
+                Umuahia Chamber of Commerce
+            </p>
+
+            <p id="lastModified"></p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
