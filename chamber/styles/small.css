@@ -690,7 +690,9 @@ a:focus-visible {
     max-width: 260px;
     height: 150px;
 
+    aspect-ratio: 13 / 7;  /* I did this to control my CLS */
     object-fit: contain;
+
     margin: 0 auto;
 }
 
@@ -782,4 +784,12 @@ a:focus-visible {
     border: 1px solid #e5baba;
 
     border-radius: var(--radius);
+}
+
+/* -----------------------------------------
+   LOADING CARD
+   ----------------------------------------- */
+.loading-card {
+    min-height: 350px;
+    background-color: var(--white);
 }
