@@ -423,6 +423,117 @@ a {
 }
 
 
+
+
+/* ---------- WEATHER ---------- */
+
+.weather-section {
+    background-color: var(--white);
+}
+
+.weather-card {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1.25rem;
+    background-color: var(--background);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.weather-current {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.weather-today {
+    text-align: center;
+}
+
+.weather-card h3 {
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+}
+
+.weather-temperature {
+    margin: 0.25rem 0;
+    color: var(--primary);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.weather-description {
+    margin: 0 0 0.5rem;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.weather-details {
+    margin: 0;
+    color: var(--muted);
+}
+
+.weather-forecast {
+    border-top: 1px solid var(--border);
+    padding-top: 1.25rem;
+}
+
+.forecast-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+}
+
+.forecast-day {
+    padding: 1rem;
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    text-align: center;
+}
+
+.forecast-day h4,
+.forecast-day p {
+    margin: 0.25rem 0;
+}
+
+.forecast-temperature {
+    color: var(--primary);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.weather-error {
+    margin: 0;
+    text-align: center;
+}
+
+.weather-error code {
+    overflow-wrap: anywhere;
+}
+
+/* ---------- HOME SPOTLIGHTS ---------- */
+
+#spotlightContainer {
+    min-height: 250px;
+}
+
+.loading-card {
+    min-height: 250px;
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background-color: var(--white);
+}
+
+.business-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+}
+
 /* ---------- FEATURED BUSINESSES ---------- */
 
 .featured-businesses {

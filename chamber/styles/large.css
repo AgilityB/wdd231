@@ -214,6 +214,38 @@
     }
 
 
+
+    /* -----------------------------------------
+       WEATHER
+       ----------------------------------------- */
+
+    .weather-card {
+        padding: 2rem;
+    }
+
+    .weather-current {
+        grid-template-columns: 0.8fr 1.2fr;
+        align-items: center;
+    }
+
+    .weather-today {
+        padding-right: 1.5rem;
+        border-right: 1px solid var(--border);
+    }
+
+    .weather-forecast {
+        border-top: 0;
+        padding-top: 0;
+    }
+
+    .forecast-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .weather-temperature {
+        font-size: 3rem;
+    }
+
     /* -----------------------------------------
        FEATURED BUSINESSES
        ----------------------------------------- */

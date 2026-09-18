@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Umuahia Chamber of Commerce | Supporting Local Business</title>
+
+    <meta name="description"
+        content="Connect with businesses, events, community opportunities, and chamber resources in Umuahia, Abia State.">
+
+    <meta name="author" content="Nwakwuruibe Bright">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <meta property="og:title" content="Umuahia Chamber of Commerce | Local Business">
+    <meta property="og:description"
+        content="Discover local businesses, chamber events, community information, and opportunities in Umuahia.">
+    <meta property="og:image" content="https://agilityb.github.io/wdd231/chamber/images/umuahia-hero.webp">
+    <meta property="og:url" content="https://agilityb.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="header-container">
+
+            <a href="index.html" class="brand">
+                <img src="images/logo.svg" alt="Umuahia Chamber of Commerce logo" width="52" height="52">
+
+                <div class="brand-text">
+                    <span class="brand-name">Umuahia Chamber</span>
+                    <span class="brand-tagline">of Commerce</span>
+                </div>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" type="button"
+                aria-label="Open navigation menu"
+                aria-controls="primaryNav"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <nav class="navigation" id="primaryNav">
+                <ul>
+                    <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero" aria-labelledby="hero-title">
+            <picture>
+                <img
+                    src="images/umuahia-hero.webp"
+                    alt="Umuahia community scene"
+                    width="1200"
+                    height="500"
+                    fetchpriority="high">
+            </picture>
+
+            <div class="hero-content container">
+                <p class="eyebrow">UMUAHIA BUSINESS COMMUNITY</p>
+                <h1 id="hero-title">Building a stronger local business community</h1>
+                <p>
+                    The Umuahia Chamber of Commerce connects businesses,
+                    entrepreneurs, and community members through local
+                    resources, networking, events, and opportunities.
+                </p>
+                <a class="button button-primary" href="join.html">Join the Chamber</a>
+            </div>
+        </section>
+
+        <section class="section intro" aria-labelledby="welcome-title">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-label">WELCOME</p>
+                    <h2 id="welcome-title">Supporting businesses in Umuahia</h2>
+                </div>
+
+                <p>
+                    Explore local businesses, discover chamber activities,
+                    connect with community opportunities, and learn how
+                    membership can support your business goals.
+                </p>
+            </div>
+        </section>
+
+        <section class="section events" aria-labelledby="events-title">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-label">COMMUNITY</p>
+                    <h2 id="events-title">Current Events</h2>
+                </div>
+
+                <div class="event-grid">
+                    <article class="event-card">
+                        <div class="event-date" aria-label="Sample event date">
+                            <span class="event-month">MAY</span>
+                            <span class="event-day">15</span>
+                        </div>
+
+                        <div class="event-content">
+                            <h3>Business Networking Meetup</h3>
+                            <p>
+                                Connect with local entrepreneurs and business
+                                owners in a relaxed networking session.
+                            </p>
+                            <p><strong>Location:</strong> Umuahia</p>
+                        </div>
+                    </article>
+
+                    <article class="event-card">
+                        <div class="event-date" aria-label="Sample event date">
+                            <span class="event-month">JUN</span>
+                            <span class="event-day">05</span>
+                        </div>
+
+                        <div class="event-content">
+                            <h3>Small Business Workshop</h3>
+                            <p>
+                                A practical session focused on resources and
+                                ideas that can help local businesses grow.
+                            </p>
+                            <p><strong>Location:</strong> Umuahia</p>
+                        </div>
+                    </article>
+                </div>
+                <!-- Sample event information for the course project. I will replace
+                    with verified chamber events when available. -->
+
+            </div>
+        </section>
+
+        <section class="section weather-section" aria-labelledby="weather-title">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-label">LOCAL CONDITIONS</p>
+                    <h2 id="weather-title">Umuahia Weather</h2>
+                </div>
+
+                <div id="weatherCard" class="weather-card">
+                    <p>Loading current weather and forecast...</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section featured-businesses" aria-labelledby="spotlights-title">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-label">MEMBER SPOTLIGHTS</p>
+                    <h2 id="spotlights-title">Business Spotlights</h2>
+                </div>
+
+                <div id="spotlightContainer" class="business-grid" aria-live="polite">
+                    <p class="loading-card">Loading member spotlights...</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section membership-cta" aria-labelledby="membership-title">
+            <div class="container cta-content">
+                <h2 id="membership-title">Grow with the Umuahia business community</h2>
+                <p>
+                    Learn about chamber membership and the opportunities
+                    available to participating businesses and organizations.
+                </p>
+                <a class="button button-secondary" href="join.html">Learn About Membership</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <section class="footer-column">
+                <h2>Umuahia Chamber of Commerce</h2>
+                <p>
+                    Umuahia, Abia State<br>
+                    Nigeria
+                </p>
+                <p>info@umuahiachamber.org</p>
+                <p>+234 810 807 1829</p>
+            </section>
+
+            <section class="footer-column">
+                <h2>Connect With Us</h2>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/bright-nwakwuruibe"
+                        target="_blank" rel="noopener noreferrer"
+                        aria-label="Visit our Facebook page">Facebook</a>
+
+                    <a href="https://www.linkedin.com/in/bright-nwakwuruibe/"
+                        target="_blank" rel="noopener noreferrer"
+                        aria-label="Visit our LinkedIn page">LinkedIn</a>
+                </div>
+            </section>
+
+            <section class="footer-column">
+                <h2>Development</h2>
+                <p>WDD 231 Chamber Project</p>
+                <p>Nwakwuruibe Bright</p>
+            </section>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                &copy;
+                <span id="currentyear"></span>
+                Umuahia Chamber of Commerce
+            </p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+</body>
+</html>
