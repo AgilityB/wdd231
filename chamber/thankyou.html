@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You | Umuahia Chamber of Commerce</title>
+<meta name="description" content="Thank you for applying for Umuahia Chamber of Commerce membership.">
+<meta name="author" content="Nwakwuruibe Bright">
+<link rel="icon" href="images/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta property="og:title" content="Membership Application Received">
+<meta property="og:description" content="Review the information submitted for your Umuahia Chamber membership application.">
+<meta property="og:image" content="https://agilityb.github.io/wdd231/chamber/images/umuahia-hero.webp">
+<meta property="og:url" content="https://agilityb.github.io/wdd231/chamber/thankyou.html">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="stylesheet" href="styles/small.css">
+<link rel="stylesheet" href="styles/large.css">
+<script src="scripts/main.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+<div class="header-container">
+<a href="index.html" class="brand">
+<img src="images/logo.svg" alt="Umuahia Chamber of Commerce logo" width="52" height="52">
+<div class="brand-text"><span class="brand-name">Umuahia Chamber</span><span class="brand-tagline">of Commerce</span></div>
+</a>
+<button class="nav-toggle" id="navToggle" type="button" aria-label="Open navigation menu" aria-controls="primaryNav" aria-expanded="false">☰</button>
+<nav class="navigation" id="primaryNav">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="directory.html">Directory</a></li>
+<li><a href="join.html">Join</a></li>
+<li><a href="discover.html">Discover</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main class="container thankyou-page">
+<section class="thankyou-card" aria-labelledby="thankyou-title">
+<p class="section-label">APPLICATION RECEIVED</p>
+<h1 id="thankyou-title">Thank You for Applying!</h1>
+<p>We appreciate your interest in the Umuahia Chamber of Commerce. Here is the information submitted with your application.</p>
+
+<div class="submitted-information">
+<h2>Your Application Details</h2>
+<dl>
+<div><dt>First Name</dt><dd id="submittedFirstName">Not provided</dd></div>
+<div><dt>Last Name</dt><dd id="submittedLastName">Not provided</dd></div>
+<div><dt>Email Address</dt><dd id="submittedEmail">Not provided</dd></div>
+<div><dt>Mobile Number</dt><dd id="submittedPhone">Not provided</dd></div>
+<div><dt>Business / Organization</dt><dd id="submittedOrganization">Not provided</dd></div>
+<div><dt>Application Timestamp</dt><dd id="submittedTimestamp">Not provided</dd></div>
+</dl>
+</div>
+
+<a class="thankyou-button" href="index.html">Return to Home</a>
+</section>
+</main>
+
+<footer class="site-footer">
+<div class="footer-container">
+<section class="footer-column">
+<h2>Umuahia Chamber of Commerce</h2>
+<p>Umuahia, Abia State<br>Nigeria</p>
+<p>info@umuahiachamber.org</p>
+<p>+234 810 807 1829</p>
+</section>
+<section class="footer-column">
+<h2>Connect With Us</h2>
+<div class="social-links">
+<a href="https://www.facebook.com/bright-nwakwuruibe" target="_blank" rel="noopener noreferrer">Facebook</a>
+<a href="https://www.linkedin.com/in/bright-nwakwuruibe/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+</div>
+</section>
+<section class="footer-column">
+<h2>Development</h2>
+<p>WDD 231 Chamber Project</p>
+<p>Nwakwuruibe Bright</p>
+</section>
+</div>
+<div class="footer-bottom">
+<p>&copy; <span id="currentyear"></span> Umuahia Chamber of Commerce</p>
+<p id="lastModified"></p>
+</div>
+</footer>
+</body>
+</html>

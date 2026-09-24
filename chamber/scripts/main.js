@@ -426,3 +426,66 @@ async function getWeather() {
 }
 
 getWeather();
+
+
+/* ---------- JOIN PAGE TIMESTAMP ---------- */
+const timestampField = document.querySelector("#timestamp");
+if (timestampField) {
+    timestampField.value = new Date().toISOString();
+}
+
+/* ---------- MEMBERSHIP MODALS ---------- */
+document.querySelectorAll(".membership-info-link").forEach((link) => {
+    link.addEventListener("click", (event) => {
+        event.preventDefault();
+        const modal = document.querySelector(`#${link.dataset.modal}`);
+        if (modal?.showModal) {
+            modal.showModal();
+        }
+    });
+});
+
+document.querySelectorAll(".membership-modal").forEach((modal) => {
+    const closeButton = modal.querySelector(".modal-close");
+
+    closeButton?.addEventListener("click", () => {
+        modal.close();
+    });
+
+    modal.addEventListener("click", (event) => {
+        if (event.target === modal) {
+            modal.close();
+        }
+    });
+});
+
+/* ---------- THANK-YOU PAGE SUBMITTED DATA ---------- */
+const submittedFields = {
+    submittedFirstName: "firstName",
+    submittedLastName: "lastName",
+    submittedEmail: "email",
+    submittedPhone: "phone",
+    submittedOrganization: "organization",
+    submittedTimestamp: "timestamp"
+};
+
+const params = new URLSearchParams(window.location.search);
+
+Object.entries(submittedFields).forEach(([elementId, parameterName]) => {
+    const element = document.querySelector(`#${elementId}`);
+    if (!element) {
+        return;
+    }
+
+    const value = params.get(parameterName);
+    if (value) {
+        if (parameterName === "timestamp") {
+            const date = new Date(value);
+            element.textContent = Number.isNaN(date.getTime())
+                ? value
+                : date.toLocaleString();
+        } else {
+            element.textContent = value;
+        }
+    }
+});

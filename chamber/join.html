@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Join | Umuahia Chamber of Commerce</title>
+<meta name="description" content="Apply for Umuahia Chamber of Commerce membership and select the membership level that fits your organization.">
+<meta name="author" content="Nwakwuruibe Bright">
+<link rel="icon" href="images/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta property="og:title" content="Join the Umuahia Chamber of Commerce">
+<meta property="og:description" content="Apply for chamber membership and connect your organization with the Umuahia business community.">
+<meta property="og:image" content="https://agilityb.github.io/wdd231/chamber/images/umuahia-hero.webp">
+<meta property="og:url" content="https://agilityb.github.io/wdd231/chamber/join.html">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="stylesheet" href="styles/small.css">
+<link rel="stylesheet" href="styles/large.css">
+<script src="scripts/main.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+<div class="header-container">
+<a href="index.html" class="brand">
+<img src="images/logo.svg" alt="Umuahia Chamber of Commerce logo" width="52" height="52">
+<div class="brand-text"><span class="brand-name">Umuahia Chamber</span><span class="brand-tagline">of Commerce</span></div>
+</a>
+<button class="nav-toggle" id="navToggle" type="button" aria-label="Open navigation menu" aria-controls="primaryNav" aria-expanded="false">☰</button>
+<nav class="navigation" id="primaryNav">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="directory.html">Directory</a></li>
+<li><a href="join.html" class="active" aria-current="page">Join</a></li>
+<li><a href="discover.html">Discover</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main class="container join-page">
+<section class="join-intro" aria-labelledby="join-title">
+<p class="section-label">MEMBERSHIP</p>
+<h1 id="join-title">Join the Umuahia Chamber of Commerce</h1>
+<p>Complete the membership application below to connect your organization with the Umuahia business community.</p>
+</section>
+
+<div class="join-layout">
+<section class="join-form-section" aria-labelledby="application-title">
+<h2 id="application-title">Membership Application</h2>
+
+<form method="get" action="thankyou.html" class="membership-form">
+<fieldset>
+<legend>Applicant Information</legend>
+
+<label for="firstName">First Name
+<input type="text" id="firstName" name="firstName" title="Enter your first name." autocomplete="given-name" required>
+</label>
+
+<label for="lastName">Last Name
+<input type="text" id="lastName" name="lastName" title="Enter your last name." autocomplete="family-name" required>
+</label>
+
+<label for="organizationTitle">Organizational Title
+<input type="text" id="organizationTitle" name="organizationTitle" title="Enter your organizational title using at least seven letters, spaces, or hyphens." autocomplete="organization-title" pattern="[A-Za-z][A-Za-z -]{6,}">
+</label>
+
+<label for="email">Email Address
+<input type="email" id="email" name="email" title="Enter a valid email address." autocomplete="email" placeholder="example@email.com" required>
+</label>
+
+<label for="phone">Mobile Phone Number
+<input type="tel" id="phone" name="phone" title="Enter your mobile phone number." autocomplete="tel" required>
+</label>
+</fieldset>
+
+<fieldset>
+<legend>Organization Information</legend>
+
+<label for="organization">Business / Organization Name
+<input type="text" id="organization" name="organization" title="Enter your business or organization name." autocomplete="organization" required>
+</label>
+
+<label for="membershipLevel">Membership Level
+<select id="membershipLevel" name="membershipLevel" title="Select a membership level." required>
+<option value="" selected disabled>Select a membership level</option>
+<option value="np">NP Membership — No Fee</option>
+<option value="bronze">Bronze Membership</option>
+<option value="silver">Silver Membership</option>
+<option value="gold">Gold Membership</option>
+</select>
+</label>
+
+<label for="description">Business / Organization Description
+<textarea id="description" name="description" title="Describe your business or organization."></textarea>
+</label>
+
+<label class="visually-hidden" for="timestamp">Application timestamp
+<input type="hidden" id="timestamp" name="timestamp">
+</label>
+</fieldset>
+
+<input type="submit" value="Submit Membership Application">
+</form>
+</section>
+
+<aside class="membership-levels" aria-labelledby="levels-title">
+<h2 id="levels-title">Membership Levels</h2>
+
+<article class="membership-level-card level-card-1">
+<h3>NP Membership</h3>
+<p>No-fee membership for eligible non-profit organizations.</p>
+<a href="#npModal" class="membership-info-link" data-modal="npModal">More information</a>
+</article>
+
+<article class="membership-level-card level-card-2">
+<h3>Bronze Membership</h3>
+<p>Entry-level paid membership with added business opportunities.</p>
+<a href="#bronzeModal" class="membership-info-link" data-modal="bronzeModal">More information</a>
+</article>
+
+<article class="membership-level-card level-card-3">
+<h3>Silver Membership</h3>
+<p>Greater participation, promotion, and event benefits.</p>
+<a href="#silverModal" class="membership-info-link" data-modal="silverModal">More information</a>
+</article>
+
+<article class="membership-level-card level-card-4">
+<h3>Gold Membership</h3>
+<p>Highest level of participation and promotional opportunities.</p>
+<a href="#goldModal" class="membership-info-link" data-modal="goldModal">More information</a>
+</article>
+</aside>
+</div>
+
+<dialog id="npModal" class="membership-modal">
+<div class="modal-content">
+<h2>NP Membership</h2>
+<p>NP Membership is for non-profit organizations and has no membership fee.</p>
+<ul>
+<li>Networking with chamber members</li>
+<li>Community event participation</li>
+<li>Access to selected training opportunities</li>
+</ul>
+<button type="button" class="modal-close">Close</button>
+</div>
+</dialog>
+
+<dialog id="bronzeModal" class="membership-modal">
+<div class="modal-content">
+<h2>Bronze Membership</h2>
+<p>Bronze is an entry-level paid membership with more business-focused benefits.</p>
+<ul>
+<li>Networking opportunities</li>
+<li>Selected chamber events</li>
+<li>Training opportunities</li>
+<li>Business directory listing</li>
+</ul>
+<button type="button" class="modal-close">Close</button>
+</div>
+</dialog>
+
+<dialog id="silverModal" class="membership-modal">
+<div class="modal-content">
+<h2>Silver Membership</h2>
+<p>Silver provides the Bronze benefits plus additional promotional and event opportunities.</p>
+<ul>
+<li>All Bronze benefits</li>
+<li>Event discounts</li>
+<li>Additional training opportunities</li>
+<li>Featured promotional opportunities</li>
+</ul>
+<button type="button" class="modal-close">Close</button>
+</div>
+</dialog>
+
+<dialog id="goldModal" class="membership-modal">
+<div class="modal-content">
+<h2>Gold Membership</h2>
+<p>Gold provides the highest level of benefits and promotional opportunities in this sample membership structure.</p>
+<ul>
+<li>All Silver benefits</li>
+<li>Priority networking opportunities</li>
+<li>Premium advertising opportunities</li>
+<li>Business spotlight opportunities on the chamber home page</li>
+</ul>
+<button type="button" class="modal-close">Close</button>
+</div>
+</dialog>
+</main>
+
+<footer class="site-footer">
+<div class="footer-container">
+<section class="footer-column">
+<h2>Umuahia Chamber of Commerce</h2>
+<p>Umuahia, Abia State<br>Nigeria</p>
+<p>info@umuahiachamber.org</p>
+<p>+234 810 807 1829</p>
+</section>
+<section class="footer-column">
+<h2>Connect With Us</h2>
+<div class="social-links">
+<a href="https://www.facebook.com/bright-nwakwuruibe" target="_blank" rel="noopener noreferrer">Facebook</a>
+<a href="https://www.linkedin.com/in/bright-nwakwuruibe/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+</div>
+</section>
+<section class="footer-column">
+<h2>Development</h2>
+<p>WDD 231 Chamber Project</p>
+<p>Nwakwuruibe Bright</p>
+</section>
+</div>
+<div class="footer-bottom">
+<p>&copy; <span id="currentyear"></span> Umuahia Chamber of Commerce</p>
+<p id="lastModified"></p>
+</div>
+</footer>
+</body>
+</html>
