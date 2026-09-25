@@ -446,7 +446,7 @@
     .navigation a:focus-visible,
     .button:focus-visible,
     .text-link:focus-visible {
-        outline: 3px solid var(--secondary);
+        outline: 3px solid var(--accent-text);
         outline-offset: 3px;
     }
 }
