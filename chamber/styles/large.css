@@ -396,7 +396,7 @@
     .member-list .member-website {
         margin: 0;
     }
-    
+
     /* -----------------------------------------
        FOOTER
        ----------------------------------------- */
@@ -477,25 +477,46 @@
    LOADING CARD
    ========================================= */
 
-   .loading-card {
-       min-height: 360px;
-   }
+    .loading-card {
+        min-height: 360px;
+    }
 }
 
- 
-
-    /* JOIN PAGE */
-    .join-page { padding-top: 3rem; }
-    .join-layout { grid-template-columns: minmax(0, 1.4fr) minmax(280px, .6fr); align-items: start; }
-    .join-form-section, .membership-levels { padding: 1.75rem; }
-    .membership-form input[type="submit"] { width: auto; min-width: 240px; }
 
 /* ---------- JOIN AND THANK-YOU LARGE SCREEN LAYOUT ---------- */
 @media (min-width: 768px) {
-    .join-page { padding-top: 3rem; }
-    .join-layout { grid-template-columns: minmax(0, 1.35fr) minmax(280px, .65fr); align-items: start; }
-    .join-form-section, .membership-levels { padding: 1.75rem; }
-    .membership-form input[type="submit"] { width: auto; min-width: 240px; }
-    .thankyou-page { padding-top: 3rem; }
-    .thankyou-card { padding: 2.25rem; }
+    .join-page {
+        padding-top: 3rem;
+    }
+
+    .join-layout {
+        grid-template-columns: minmax(0, 1.35fr) minmax(280px, .65fr);
+        align-items: start;
+    }
+
+    .join-form-section {
+        order: 1;
+    }
+
+    .membership-levels {
+        order: 2;
+    }
+
+    .join-form-section,
+    .membership-levels {
+        padding: 1.75rem;
+    }
+
+    .membership-form input[type="submit"] {
+        width: auto;
+        min-width: 240px;
+    }
+
+    .thankyou-page {
+        padding-top: 3rem;
+    }
+
+    .thankyou-card {
+        padding: 2.25rem;
+    }
 }
