@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Umuahia | Umuahia Chamber of Commerce</title>
+    <meta name="description" content="Discover notable places, local commerce, history, education, and agriculture in Umuahia, Abia State, Nigeria.">
+    <meta name="author" content="Nwakwuruibe Bright">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/discover.css">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/discover.js" type="module"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="brand">
+                <img src="images/logo.svg" alt="Umuahia Chamber of Commerce logo" width="52" height="52">
+                <div class="brand-text">
+                    <span class="brand-name">Umuahia Chamber</span>
+                    <span class="brand-tagline">of Commerce</span>
+                </div>
+            </a>
+            <button class="nav-toggle" id="navToggle" type="button" aria-label="Open navigation menu" aria-controls="primaryNav" aria-expanded="false">☰</button>
+            <nav class="navigation" id="primaryNav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html" class="active" aria-current="page">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="discover-page">
+        <section class="discover-intro" aria-labelledby="discover-title">
+            <div class="container">
+                <p class="section-label">EXPLORE OUR COMMUNITY</p>
+                <h1 id="discover-title">Discover Umuahia</h1>
+                <p>From local markets and agricultural research to educational institutions and places of historical importance, explore the people and places that shape our community.</p>
+            </div>
+        </section>
+
+        <section class="visit-panel container" aria-live="polite" aria-atomic="true">
+            <span class="visit-icon" aria-hidden="true">✦</span>
+            <p id="visitMessage">Welcome! Let us know if you have any questions.</p>
+        </section>
+
+        <section class="discover-section container" aria-labelledby="places-title">
+            <div class="section-heading">
+                <p class="section-label">PLACES &amp; LOCAL HIGHLIGHTS</p>
+                <h2 id="places-title">Explore the Area</h2>
+                <p>Eight points of interest representing Umuahia's history, commerce, education, and agricultural community.</p>
+            </div>
+            <div id="discoverGrid" class="discover-grid" aria-label="Places of interest in and around Umuahia"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <section class="footer-column">
+                <h2>Umuahia Chamber of Commerce</h2>
+                <p>Umuahia, Abia State<br>Nigeria</p>
+                <p>info@umuahiachamber.org</p>
+                <p>+234 810 807 1829</p>
+            </section>
+            <section class="footer-column">
+                <h2>Connect With Us</h2>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/bright-nwakwuruibe" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page">Facebook</a>
+                    <a href="https://www.linkedin.com/in/bright-nwakwuruibe/" target="_blank" rel="noopener noreferrer" aria-label="Visit our LinkedIn page">LinkedIn</a>
+                </div>
+            </section>
+            <section class="footer-column">
+                <h2>Development</h2>
+                <p>WDD 231 Chamber Project</p>
+                <p>Nwakwuruibe Bright</p>
+            </section>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentyear"></span> Umuahia Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>
