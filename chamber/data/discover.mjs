@@ -42,13 +42,13 @@ export const places = [
     source: "https://en.wikivoyage.org/wiki/Umuahia"
   },
   {
-    id: "umuahia-central-market",
-    name: "Umuahia Central Market",
-    address: "Central market district, Umuahia, Abia State, Nigeria",
-    description: "Umuahia's markets support trade in food, clothing, household goods, and other everyday products. They are an important part of the local economy and connect small businesses with customers from surrounding areas.",
-    image: "images/discover-central-market.webp",
-    imageAlt: "Representative image for Umuahia Central Market",
-    learnMore: "Market names and boundaries can vary in local usage. Confirm the precise destination with a local guide or current map before visiting.",
+    id: "umuahia-central-bus-terminal",
+    name: "Umuahia Central Bus Terminal",
+    address: "Former Umuahia urban market, Umuahia, Abia State, Nigeria",
+    description: "The central bus terminal serves as a key transportation hub for Umuahia, connecting it to other parts of the region and facilitating travel for residents and visitors.",
+    image: "images/discover-bus-terminal.webp",
+    imageAlt: "Representative image for Umuahia Central Bus Terminal",
+    learnMore: "Bus terminal names and boundaries can vary in local usage. Confirm the precise destination with a local guide or current map before visiting.",
     source: "https://en.wikivoyage.org/wiki/Umuahia"
   },
   {
