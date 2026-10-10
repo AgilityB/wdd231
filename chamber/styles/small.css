@@ -521,7 +521,7 @@ a {
 }
 
 .loading-card {
-    min-height: 250px;
+    min-height: 350px;
     display: grid;
     place-items: center;
     padding: 1rem;
@@ -900,14 +900,6 @@ a:focus-visible {
     border-radius: var(--radius);
 }
 
-/* -----------------------------------------
-   LOADING CARD
-   ----------------------------------------- */
-.loading-card {
-    min-height: 350px;
-    background-color: var(--white);
-}
-
 /* ---------- JOIN PAGE ---------- */
 .join-page {
     width: min(92%, 1100px);
@@ -943,15 +935,11 @@ a:focus-visible {
     border: 1px solid var(--border);
     border-radius: var(--radius);
     box-shadow: var(--shadow);
+    order: 2;
 }
 
 .join-form-section {
     order: 1;
-}
-
-.membership-levels {
-    order: 2;
-    align-self: stretch;
 }
 
 .join-form-section h2,
@@ -1045,10 +1033,6 @@ a:focus-visible {
 }
 
 /* ---------- JOIN MEMBERSHIP CARDS, MODALS, AND THANK-YOU PAGE ---------- */
-.membership-levels {
-    align-self: start;
-}
-
 .membership-level-card {
     margin-bottom: 1rem;
     padding: 1.15rem;

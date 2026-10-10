@@ -9,7 +9,7 @@
 .visit-icon { display: grid; place-items: center; flex: 0 0 2.25rem; width: 2.25rem; height: 2.25rem; border-radius: 50%; background: #f8edc9; color: var(--primary); font-size: 1.25rem; }
 .discover-section { width: min(92%, 1200px); margin-inline: auto; }
 .discover-section .section-heading > p:last-child { max-width: 700px; margin: .75rem auto 0; color: var(--muted); }
-.discover-grid { display: grid; grid-template-columns: minmax(0, 1fr); grid-template-areas: "abia-tower"
+.discover-grid { display: grid; width: 100%; min-width: 0; grid-template-columns: minmax(0, 1fr); grid-template-areas: "abia-tower"
     "national-war-museum"
     "ojukwu-bunker"
     "ishi-gate-market"
@@ -20,7 +20,7 @@
 .discover-card { min-width: 0; padding: 1rem; display: flex; flex-direction: column; background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; }
 .discover-card h2 { margin: 0 0 .75rem; color: var(--primary); font-size: 1.2rem; line-height: 1.3; }
 .discover-card figure { margin: 0 0 .9rem; overflow: hidden; border-radius: 7px; background: #e7ece8; }
-.discover-card img { display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+.discover-card img { display: block; width: 100%; max-width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; }
 .discover-card address { margin-bottom: .75rem; color: var(--muted); font-size: .9rem; font-style: normal; }
 .discover-description, .discover-more { margin: 0 0 1rem; font-size: .95rem; }
 .discover-more { padding: .8rem; border-radius: 6px; background: #f1f6f2; }
@@ -68,9 +68,7 @@
 
 
 /* Responsive safety: keep every generated card inside its named grid area. */
-.discover-grid { width: 100%; min-width: 0; }
 .discover-grid > .discover-card { min-width: 0; max-width: 100%; }
-.discover-card img { max-width: 100%; height: auto; }
 @media screen and (max-width: 640px) {
   .discover-grid {
     grid-template-columns: minmax(0, 1fr);
