@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Olumo Rock",
+    "state": "Ogun",
+    "category": "Heritage",
+    "location": "Abeokuta",
+    "description": "A historic granite outcrop overlooking Abeokuta, known for its connection to Egba history."
+  },
+  {
+    "id": 2,
+    "name": "Yankari Game Reserve",
+    "state": "Bauchi",
+    "category": "Nature",
+    "location": "Alkaleri",
+    "description": "A wildlife reserve with savanna landscapes and warm springs."
+  },
+  {
+    "id": 3,
+    "name": "Obudu Mountain Resort",
+    "state": "Cross River",
+    "category": "Nature",
+    "location": "Obanliku",
+    "description": "A highland retreat known for cool weather and mountain scenery."
+  },
+  {
+    "id": 4,
+    "name": "Lekki Conservation Centre",
+    "state": "Lagos",
+    "category": "Nature",
+    "location": "Lekki",
+    "description": "A conservation area protecting wetlands and coastal forest habitat."
+  },
+  {
+    "id": 5,
+    "name": "Erin Ijesha Waterfalls",
+    "state": "Osun",
+    "category": "Nature",
+    "location": "Oriade",
+    "description": "A multi-level waterfall set among forested hills."
+  },
+  {
+    "id": 6,
+    "name": "Osun-Osogbo Sacred Grove",
+    "state": "Osun",
+    "category": "Culture",
+    "location": "Osogbo",
+    "description": "A UNESCO-listed sacred forest associated with Yoruba traditions."
+  },
+  {
+    "id": 7,
+    "name": "Kajuru Castle",
+    "state": "Kaduna",
+    "category": "Architecture",
+    "location": "Kajuru",
+    "description": "A castle-inspired landmark set among rocky hills; access arrangements should be checked."
+  },
+  {
+    "id": 8,
+    "name": "National Museum Lagos",
+    "state": "Lagos",
+    "category": "Culture",
+    "location": "Onikan",
+    "description": "A museum exhibiting Nigerian history, art and cultural objects."
+  },
+  {
+    "id": 9,
+    "name": "Aso Rock",
+    "state": "FCT",
+    "category": "Landmark",
+    "location": "Abuja",
+    "description": "A prominent granite monolith that forms part of Abuja’s landscape."
+  },
+  {
+    "id": 10,
+    "name": "Zuma Rock",
+    "state": "Niger",
+    "category": "Landmark",
+    "location": "Suleja area",
+    "description": "An enormous rock formation visible near the Abuja–Kaduna road."
+  },
+  {
+    "id": 11,
+    "name": "Idanre Hills",
+    "state": "Ondo",
+    "category": "Heritage",
+    "location": "Idanre",
+    "description": "Steep hills with cultural sites, dramatic views and historic settlements."
+  },
+  {
+    "id": 12,
+    "name": "Ogbunike Caves",
+    "state": "Anambra",
+    "category": "Heritage",
+    "location": "Ogbunike",
+    "description": "A network of caves with cultural significance to local communities."
+  },
+  {
+    "id": 13,
+    "name": "Agbokim Waterfalls",
+    "state": "Cross River",
+    "category": "Nature",
+    "location": "Etung",
+    "description": "A scenic waterfall area near Nigeria’s southeastern border."
+  },
+  {
+    "id": 14,
+    "name": "Nike Art Gallery",
+    "state": "Lagos",
+    "category": "Culture",
+    "location": "Lekki",
+    "description": "An art gallery featuring work by Nigerian artists and artisans."
+  },
+  {
+    "id": 15,
+    "name": "Kano City Walls",
+    "state": "Kano",
+    "category": "Heritage",
+    "location": "Kano",
+    "description": "Historic defensive walls that reflect Kano’s long urban history."
+  }
+]
