@@ -12,15 +12,18 @@
     <meta property="og:title" content="Home | Nigerian Travel Guide">
     <meta property="og:description"
         content="Explore Nigerian tourist attractions, landscapes, culture, and travel planning resources.">
-    <meta property="og:image" content="https://agilityb.github.io/wdd231/final/images/landscape-hills.svg">
+    <meta property="og:image" content="https://agilityb.github.io/wdd231/final/images/welcome-nigeria.webp">
     <meta property="og:url" content="https://agilityb.github.io/wdd231/final/index.html">
     
-    <link rel="icon" href="images/favicon.svg">
-
+    <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
 
+
     <script type="module" src="scripts/main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -40,7 +43,7 @@
                 <h1>Discover the beauty of Nigeria</h1>
                 <p>From breathtaking hills to living traditions, find memorable places to explore across the country.
                 </p><a class="button" href="destinations.html">Explore destinations →</a>
-            </div><img src="images/welcome-nigeria.webp" alt="Illustrated green mountain landscape with a golden sun"
+            </div><img src="images/welcome-nigeria.webp" alt="The Abuja City gate welcoming visitors to Nigeria"
                 width="800" height="450" fetchpriority="high">
         </section>
         <section class="section intro">
@@ -58,21 +61,21 @@
             </div>
             <div class="feature-grid">
                 <article class="feature-card"><img src="images/idanre-hills.webp"
-                        alt="Illustration of a hilly landscape" width="800" height="450" loading="lazy">
+                        alt="Idanre Hills Scenic Beauty" width="800" height="450" loading="lazy">
                     <div>
                         <h3>Idanre Hills</h3>
                         <p>Discover a dramatic landscape and cultural history in Ondo State.</p>
                     </div>
                 </article>
                 <article class="feature-card"><img src="images/erin-ijesha.webp"
-                        alt="Illustration of a mountain and water landscape" width="800" height="450" loading="lazy">
+                        alt="Erin Ijesha Water Fall" width="800" height="450" loading="lazy">
                     <div>
                         <h3>Erin Ijesha Waterfalls</h3>
                         <p>Explore cascading water and lush scenery in Osun State.</p>
                     </div>
                 </article>
                 <article class="feature-card"><img src="images/national-museum.webp"
-                        alt="Illustration of a scenic landmark" width="800" height="450" loading="lazy">
+                        alt="National Museum Lagos" width="800" height="450" loading="lazy">
                     <div>
                         <h3>National Museum Lagos</h3>
                         <p>Learn about Nigeria’s art, history, and cultural heritage.</p>
@@ -87,21 +90,67 @@
         </section>
     </main>
     <footer class="site-footer">
-        <div class="footer-inner">
-            <div><strong>Nigerian Travel &amp; Tourist Guide</strong>
-                <p>Discover landscapes, heritage, and culture across Nigeria.</p>
-            </div>
-            <div><strong>Explore</strong>
-                <p><a href="destinations.html">Destinations</a> · <a href="travel-tips.html">Travel tips</a></p>
-            </div>
-            <div><strong>Project</strong>
-                <p><a href="attributions.html">Attributions</a></p>
-                <p class="video-note">My link.</p>
-            </div>
+        <div class="footer-container">
+    
+            <!-- Contact Information -->
+            <section class="footer-column">
+                <h2>Nigerian Travel Guide</h2>
+                <p>Lagos<br>Nigeria</p>
+    
+                <p>
+                    <a href="mailto:nwakwuruibebright@gmail.com">
+                        nwakwuruibebright@gmail.com
+                    </a>
+                </p>
+    
+                <p>
+                    <a href="tel:+2348108071829">
+                        +234 810 807 1829
+                    </a>
+                </p>
+            </section>
+    
+            <!-- Social Media -->
+            <section class="footer-column">
+                <h2>Connect With Us</h2>
+    
+                <div class="social-links">
+                    <a href="https://www.facebook.com/bright-nwakwuruibe" target="_blank" rel="noopener noreferrer">
+                        Facebook
+                    </a>
+    
+                    <a href="https://www.linkedin.com/in/bright-nwakwuruibe/" target="_blank" rel="noopener noreferrer">
+                        LinkedIn
+                    </a>
+                </div>
+            </section>
+    
+            <!-- Quick Links -->
+            <section class="footer-column">
+                <h2>Quick Links</h2>
+    
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="destinations.html">Destinations</a>
+                    <a href="travel-tips.html">Travel Tips</a>
+                    <a href="attributions.html">Attributions</a>
+                </div>
+    
+                <!-- Add your Loom video link here after uploading -->
+            </section>
+    
         </div>
-        <p class="copyright">© <span id="currentyear"></span> Nigerian Travel Guide · <span id="lastModified"></span>
-        </p>
+    
+        <div class="footer-bottom">
+            <p>
+                &copy; <span id="currentyear"></span>
+                Nigerian Travel Guide | WDD 231 Individual Project
+            </p>
+    
+            <p id="lastModified"></p>
+        </div>
     </footer>
+
 </body>
 
 </html>
